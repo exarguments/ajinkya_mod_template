@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Amulset</title>
+    <meta name="description" content="Digital Marketing firm based in Pune, Maharashtra, India" />
+    <meta name="keywords" content="Digital Markeing, Online Marketing, Branding, Package Designing" />
+    <meta name="author" content="Amalsut" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/style_new.css">
+    <style media="screen">
+        .menu-container {
+            display: inline-block;
+            cursor: pointer;
+            height: 50px;
+            width: 50px;
+            z-index: 1000;
+            right: 0;
+            position: absolute;
+        }
+
+        .bar1,
+        .bar2,
+        .bar3 {
+            width: 35px;
+            height: 5px;
+            background-color: #333;
+            margin: 6px 0;
+            transition: 0.5s;
+        }
+
+        .bar2 {
+            width: 25px;
+            margin: auto;
+        }
+
+        .change .bar1 {
+            -webkit-transform: rotate(-65deg) translate(-12px, 5px);
+            transform: rotate(-65deg) translate(-12px, 5px);
+        }
+
+        .change .bar2 {
+            opacity: 1;
+            /*height: 2px;*/
+            width: 35px;
+            top: 8px;
+            left: 0px;
+            position: relative
+        }
+
+        .change .bar3 {
+            -webkit-transform: rotate(62deg) translate(4px, -16px);
+            transform: rotate(62deg) translate(4px, -16px);
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="row">
+        <div id="slide" class="overlay-close right menu-container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+    </div>
+
+    <div id="home" class="row container">
+        <div class="col m1 s2 red">
+            <h1 id="" class="amalsuttitle amal2 black-text">A.Name</h1>
+        </div>
+        <div class="col m11 s10">
+            <div class="row">
+                <div class="col s12 w1 black" style="height:40vh;background-image:url(https://images.pexels.com/photos/157231/pexels-photo-157231.jpeg?w=940&h=650&auto=compress&cs=tinysrgb)"></div>
+                <div class="col m8 s6 w2" style="height:40vh;background-image:url(https://images.pexels.com/photos/159638/medicine-ball-ball-gymnastics-exercise-ball-159638.jpeg?w=940&h=650&auto=compress&cs=tinysrgb)">
+                    <!-- <img src="https://images.pexels.com/photos/159622/school-old-plate-learning-159622.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="" class="responsive-img"> -->
+                    <!-- <h4 class="ninetytext">amalsut</h4> -->
+                </div>
+                <div class="col m4 s6 w3 black darken-4 white-text">
+                    <p class="right-align">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="about" class="row container">
+        <div class="col m1 s2 yellow">
+            <h1 id="" class="amalsuttitle amal2 black-text">about.us</h1>
+        </div>
+        <div class="col m11 s10">
+            <p class="flow-text left-align regular">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="col m6 offset-m6">
+          <img src="https://images.pexels.com/photos/251287/pexels-photo-251287.png?w=940&h=650&auto=compress&cs=tinysrgb" alt="" class="responsive-img">
+        </div>
+    </div>
+
+
+    <div id="service2" class="row container">
+        <div class="col m1 s2 green">
+            <h1 id="" class="amalsuttitle amal2 black-text">Services</h1>
+        </div>
+        <div class="col m11 s10">
+          <ol>
+            <li><h4 class="left-align">ADVERTISING</h4></li>
+            <li><h4 class="left-align">BRANDING & BRAND DEVELOPMENT CONSLUTANCY</h4></li>
+            <li><h4 class="left-align">DIGITAL MEDIA & SOCIAL MEDIA MARKETING</h4></li>
+            <li><h4 class="left-align">COMMERCIAL PRINTING</h4></li>
+            <li><h4 class="left-align">EVENTS & EVENT EXECUTION</h4></li>
+            <li><h4 class="left-align">CONTENT DEVELOPMENT</h4></li>
+          </ol>
+        </div>
+    </div>
+
+    <!-- <div class="container">
+        <h1 class="header">Our service</h1>
+    </div>
+
+    <div id="service" class="row container">
+        <div class="col m4 s6 fullcards">
+            <h5 class="white-text">ADVERTISING</h5>
+        </div>
+        <div class="col m4 s6 fullcards">
+            <h5 class="white-text">BRANDING & BRAND DEVELOPMENT CONSLUTANCY</h5>
+        </div>
+        <div class="col m4 s6 fullcards">
+            <h5 class="white-text">DIGITAL MEDIA & SOCIAL MEDIA MARKETING</h5>
+        </div>
+        <div class="col m4 s6 fullcards">
+            <h5 class="white-text">COMMERCIAL PRINTING</h5>
+        </div>
+        <div class="col m4 s6 fullcards">
+            <h5 class="white-text">EVENTS & EVENT EXECUTION</h5>
+        </div>
+        <div class="col m4 s6 fullcards">
+            <h5 class="white-text">CONTENT DEVELOPMENT</h5>
+        </div>
+    </div> -->
+
+
+    <div id="" class="row container">
+        <div class="col m1 s2 orange">
+            <h1 id="" class="amalsuttitle amal2 black-text">Projects</h1>
+        </div>
+        <div class="col m11 s10">
+          <div class="row">
+              <div class="col m4 s12">
+                  <img src="https://images.pexels.com/photos/34639/pexels-photo.jpg?w=940&h=650&auto=compress&cs=tinysrgb" alt="" class="responsive-img">
+              </div>
+              <div class="col m6 s12">
+                <h4>Title</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      <a href="#">More<i class="material-icons" style="padding:0;top:7px;position:relative">trending_flat</i></a>
+                  </p>
+              </div>
+              <div class="col m2"></div>
+          </div>
+
+          <div class="row">
+              <div class="col m2"></div>
+              <div class="col m4 s12">
+                  <img src="https://images.pexels.com/photos/34639/pexels-photo.jpg?w=940&h=650&auto=compress&cs=tinysrgb" alt="" class="responsive-img">
+              </div>
+              <div class="col m6 s12 left-align">
+                <h4>Title</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    <a href="#">More<i class="material-icons" style="padding:0;top:7px;position:relative">trending_flat</i></a>
+                </p>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="col m4 s12">
+                  <img src="https://images.pexels.com/photos/34639/pexels-photo.jpg?w=940&h=650&auto=compress&cs=tinysrgb" alt="" class="responsive-img">
+              </div>
+              <div class="col m6 s12">
+                <h4>Title</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    <a href="#">More<i class="material-icons" style="padding:0;top:7px;position:relative">trending_flat</i></a>
+                </p>
+              </div>
+              <div class="col m2"></div>
+          </div>
+
+        </div>
+    </div>
+
+
+    <!-- <div id="project" class="row container">
+
+        <div class="col m3 s6"></div>
+        <div class="col m3 s6"></div>
+        <div class="col m3 s6"></div>
+        <div class="col m1 valign-wrapper" style="width:10vw">
+            <span class="">More</span>
+            <i class="material-icons small">trending_flat</i>
+        </div>
+    </div> -->
+
+    <div id="clients" class="row container">
+      <div class="col m1 s2 blue">
+          <h1 id="" class="amalsuttitle amal2 black-text">clients</h1>
+      </div>
+      <div class="col m11 s10">
+        <div class="row">
+          <div class="col m4 s4"><img src="http://files.prokerala.com/banking/images/bank-logo/sbi.png" class="responsive-img" alt=""></div>
+          <div class="col m4 s4"><img src="https://image.freepik.com/free-icon/apple-logo_318-40184.jpg" class="responsive-img" alt=""></div>
+          <div class="col m4 s4"><img src="http://s-media-cache-ak0.pinimg.com/736x/41/1a/48/411a4835d38ff899e55ce2802b08329c.jpg" class="responsive-img" alt=""></div>
+        </div>
+        <div class="row">
+          <div class="col m4 s4"><img src="https://s-media-cache-ak0.pinimg.com/736x/0d/ae/46/0dae4699c92f39f02f985665f7e5c878.jpg" class="responsive-img" alt=""></div>
+          <div class="col m4 s4"><img src="https://s-media-cache-ak0.pinimg.com/736x/47/bb/d8/47bbd8bfde37180d4fd61dc245c7ea09.jpg" class="responsive-img" alt=""></div>
+          <div class="col m4 s4"><img src="https://s-media-cache-ak0.pinimg.com/736x/35/39/88/3539889f8d4988d18a53801882e39090.jpg" class="responsive-img" alt=""></div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="page-footer white grey-text lighten-1">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="row">
+                        <div class="col m12 s12">
+                            <h2 class="black-text darken-2">Catch us on</h2>
+                            <i class="fa fa-facebook fa-2x"></i>
+                            <i class="fa fa-twitter fa-2x"></i>
+                            <i class="fa fa-pinterest fa-2x"></i>
+                            <i class="fa fa-youtube fa-2x"></i>
+                            <i class="fa fa-instagram fa-2x"></i>
+                            <i class="fa fa-google-plus fa-2x"></i>
+
+                        </div>
+                        <div class="col m12 s12">
+                            <h2 class="black-text darken-2">Meet us at</h2>
+                            <div class="row">
+                                <div class="col m1 s1">
+                                    <i class="material-icons">room</i>
+                                </div>
+                                <div class="col m11 s11">
+                                    lorem Lorem,<br> lorem lorem lorem,<br> 123221
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col m12 s12">
+                            <div class="row">
+                                <div class="col m1 s1">
+                                    <i class="material-icons">phone</i>
+                                </div>
+                                <div class="col m11 s11">
+                                    1234 1234 12
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6">
+                    <h2 class="black-text darken-2">Write to us</h2>
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="first_name" type="text" class="validate" placeholder="Name">
+                                <!-- <label for="first_name">First Name</label> -->
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="mobile" type="text" class="validate" placeholder="Mobile">
+                            </div>
+                            <div class="input-field col s12">
+                                <input id="email" type="email" class="validate" placeholder="Email">
+                            </div>
+                            <div class="input-field col s12">
+                                <textarea id="textarea1" class="materialize-textarea" placeholder="Message"></textarea>
+                            </div>
+                            <div class="center-align">
+                                <a class="waves-effect waves-light btn black">Send</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-copyright grey-text">
+            <div class="container">
+                © 2017 Copyright
+                <a class="grey-text right" href="#!">Designed by Aditya Parkhe</a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="js/materialize.min.js"></script>
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+            $('.patta:nth-child(1)').toggleClass('slideDown', 200);
+
+            setTimeout(function() {
+                $('.patta:nth-child(2)').toggleClass('slideDown', 200);
+            }, 200);
+            setTimeout(function() {
+                $('.patta:nth-child(3)').toggleClass('slideDown', 200);
+            }, 400);
+
+
+            setTimeout(function() {
+                $('.patta:nth-child(4)').toggleClass('slideDown', 200);
+            }, 600);
+
+        }
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.slider').slider();
+        });
+    </script>
+
+</body>
+
+</html>

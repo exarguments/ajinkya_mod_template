@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Amalsut</title>
+    <meta name="description" content="Digital Marketing firm based in Pune, Maharashtra, India" />
+    <meta name="keywords" content="Digital Markeing, Online Marketing, Branding, Package Designing" />
+    <meta name="author" content="Xargs" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css" /> menu bar was working without it -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/fullscreen_menu.css" />
+    <!-- navbar --->
+    <link rel="stylesheet" href="css/grey.css">
+    <script src="js/snap.svg-min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="js/materialize.min.js"></script>
+    <style media="screen">
+        .menu-container {
+            display: inline-block;
+            cursor: pointer;
+            height: 50px;
+            width: 50px;
+            z-index: 1000;
+            right: 0;
+            position: absolute;
+        }
+
+        .bar1,
+        .bar2,
+        .bar3 {
+            width: 35px;
+            height: 5px;
+            background-color: #333;
+            margin: 6px 0;
+            transition: 0.5s;
+        }
+
+        .change .bar1 {
+            -webkit-transform: rotate(-65deg) translate(-12px, 5px);
+            transform: rotate(-65deg) translate(-12px, 5px);
+        }
+
+        .change .bar2 {
+            opacity: 1;
+            height: 2px;
+            width: 35px;
+            top: 8px;
+            left: 5px;
+            position: relative
+        }
+
+        .change .bar3 {
+            -webkit-transform: rotate(62deg) translate(4px, -16px);
+            transform: rotate(62deg) translate(4px, -16px);
+        }
+        /********full screen video with floating stensiled triangles*******/
+
+        html {
+            height: 100%;
+            overflow: hidden;
+            font-weight: 100;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 35em;
+            letter-spacing: -0.03em;
+            height: 100%;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        svg text {
+            text-anchor: middle;
+        }
+
+        svg mask rect {
+            fill: rgba(255, 255, 255, 0.9);
+        }
+
+        svg>rect {
+            fill: white;
+            -webkit-mask: url(#mask);
+            mask: url(#mask);
+        }
+
+        video {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        @media only screen and (max-width: 768px) {
+            html {
+                font-size: 0.5em;
+                font-weight: 400;
+            }
+        }
+
+        .floating {
+            animation-name: floating;
+            -webkit-animation-name: floating;
+            animation-duration: 10s;
+            -webkit-animation-duration: 10s;
+            animation-iteration-count: infinite;
+            -webkit-animation-iteration-count: infinite;
+        }
+
+        @keyframes floating {
+            0% {
+                transform: translateX(0%);
+            }
+            20% {
+                transform: translateX(60%);
+            }
+            80% {
+                transform: translateX(20%)
+            }
+            100% {
+                transform: translateX(0%);
+            }
+        }
+
+        @-webkit-keyframes floating {
+            0% {
+                -webkit-transform: translateX(0%);
+            }
+            50% {
+                transform: translateX(100%);
+            }
+            80% {
+                transform: translateX(150%);
+            }
+            100% {
+                -webkit-transform: translateX(0%);
+            }
+        }
+
+        div .patta {
+            background-color: beige;
+            width: 100vw;
+            border: 1px solid pink;
+            top: 20%
+        }
+
+        .slideDown {
+            height: 25vh;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- full screen menu below -->
+
+    <!-- open/close -->
+    <!-- <div class="overlay overlay-boxes">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="101%" viewBox="0 0 1440 806" preserveAspectRatio="none">
+				<path id="path1" d="m0.005959,200.364029l207.551124,0l0,204.342453l-207.551124,0l0,-204.342453z"/>
+				<path id="path2" id="path1" d="m0.005959,400.45401l207.551124,0l0,204.342499l-207.551124,0l0,-204.342499z"/>
+				<path id="path3" d="m0.005959,600.544067l207.551124,0l0,204.342468l-207.551124,0l0,-204.342468z"/>
+				<path id="path4" d="m205.752151,-0.36l207.551163,0l0,204.342437l-207.551163,0l0,-204.342437z"/>
+				<path id="path4" d="m204.744629,200.364029l207.551147,0l0,204.342453l-207.551147,0l0,-204.342453z"/>
+				<path id="path5" d="m204.744629,400.45401l207.551147,0l0,204.342499l-207.551147,0l0,-204.342499z"/>
+				<path id="path6" d="m204.744629,600.544067l207.551147,0l0,204.342468l-207.551147,0l0,-204.342468z"/>
+				<path id="path6" d="m410.416046,-0.36l207.551117,0l0,204.342437l-207.551117,0l0,-204.342437z"/>
+				<path id="path7" d="m410.416046,200.364029l207.551117,0l0,204.342453l-207.551117,0l0,-204.342453z"/>
+				<path id="path8" d="m410.416046,400.45401l207.551117,0l0,204.342499l-207.551117,0l0,-204.342499z"/>
+				<path id="path9" d="m410.416046,600.544067l207.551117,0l0,204.342468l-207.551117,0l0,-204.342468z"/>
+				<path id="path10" d="m616.087402,-0.36l207.551086,0l0,204.342437l-207.551086,0l0,-204.342437z"/>
+				<path id="path11" d="m616.087402,200.364029l207.551086,0l0,204.342453l-207.551086,0l0,-204.342453z"/>
+				<path id="path12" d="m616.087402,400.45401l207.551086,0l0,204.342499l-207.551086,0l0,-204.342499z"/>
+				<path id="path13" d="m616.087402,600.544067l207.551086,0l0,204.342468l-207.551086,0l0,-204.342468z"/>
+				<path id="path14" d="m821.748718,-0.36l207.550964,0l0,204.342437l-207.550964,0l0,-204.342437z"/>
+				<path id="path15" d="m821.748718,200.364029l207.550964,0l0,204.342453l-207.550964,0l0,-204.342453z"/>
+				<path id="path16" d="m821.748718,400.45401l207.550964,0l0,204.342499l-207.550964,0l0,-204.342499z"/>
+				<path id="path17" d="m821.748718,600.544067l207.550964,0l0,204.342468l-207.550964,0l0,-204.342468z"/>
+				<path id="path18" d="m1027.203979,-0.36l207.550903,0l0,204.342437l-207.550903,0l0,-204.342437z"/>
+				<path id="path19" d="m1027.203979,200.364029l207.550903,0l0,204.342453l-207.550903,0l0,-204.342453z"/>
+				<path id="path20" d="m1027.203979,400.45401l207.550903,0l0,204.342499l-207.550903,0l0,-204.342499z"/>
+				<path id="path21" d="m1027.203979,600.544067l207.550903,0l0,204.342468l-207.550903,0l0,-204.342468z"/>
+				<path id="path22" d="m1232.659302,-0.36l207.551147,0l0,204.342437l-207.551147,0l0,-204.342437z"/>
+				<path id="path23" d="m1232.659302,200.364029l207.551147,0l0,204.342453l-207.551147,0l0,-204.342453z"/>
+				<path id="path24" d="m1232.659302,400.45401l207.551147,0l0,204.342499l-207.551147,0l0,-204.342499z"/>
+				<path id="path25" d="m1232.659302,600.544067l207.551147,0l0,204.342468l-207.551147,0l0,-204.342468z"/>
+				<path id="path26" d="m-0.791443,-0.360001l207.551163,0l0,204.342438l-207.551163,0l0,-204.342438z"/>
+			</svg> -->
+
+        <!-- <button type="button" class="overlay-close"><i class="material-icons overlay-close">home</i></button> -->
+        <!-- <div class="row">
+            <ul class="col s9 m4">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Clients</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </div>
+    </div> -->
+
+    <!-- main content below -->
+
+
+    <!-- Top Navigation -->
+    <div id="home" class="">
+
+        <!-- <div id="trigger-overlay" class="overlay-close right menu-container" onclick="myFunction(this)"> -->
+        <div id="slide" class="overlay-close right menu-container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <div class="">
+            <!-- <button type="button" name="button" id="slide" style="">Menu</button> -->
+            <div class="patta"></div>
+            <div class="patta"></div>
+            <div class="patta"></div>
+            <div class="patta"></div>
+        </div>
+
+
+    </div>
+
+    <!-- <div class="" style="height:100vh;width:100vw">
+  <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <mask id="mask" x="0" y="0" width="100%" height="100%" >
+        <rect x="0" y="0" width="1920" height="1080"/>
+        <polygon class="floating" points="400,110 450,390 160,410" x="960" y="1em" />
+        <polygon class="floating" points="700,210 650,590 -160,610" x="960" y="1em" />
+      </mask>
+    </defs>
+    <rect x="0" y="0" width="100%" height="1080"/>
+  </svg>
+  <video id="video" autoplay="autoplay" muted="muted" preload="auto" loop="loop">
+      <source src="http://mazwai.com/system/posts/videos/000/000/123/original/victor_ciurus--5d_mark_iii_magic_lantern_14_bits_raw_video.mp4?1412890624" type="video/mp4">
+      <source src="http://mazwai.com/system/posts/videos/000/000/123/webm/victor_ciurus--5d_mark_iii_magic_lantern_14_bits_raw_video.webm?1412890624" type="video/webm">
+  </video>
+</div> -->
+
+
+
+    <script src="js/classie.js"></script>
+    <script src="js/demo10.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+            $('.patta:nth-child(1)').toggleClass('slideDown', 200);
+
+            setTimeout(function() {
+                $('.patta:nth-child(2)').toggleClass('slideDown', 200);
+            }, 200);
+            setTimeout(function() {
+              $('.patta:nth-child(3)').toggleClass('slideDown', 200);
+            }, 400);
+
+
+            setTimeout(function() {
+              $('.patta:nth-child(4)').toggleClass('slideDown', 200);
+            }, 600);
+
+        }
+
+    </script>
+
+
+    <!-- jQuery library -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script> -->
+
+    <!-- Latest compiled JavaScript -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+</body>
+
+</html>
